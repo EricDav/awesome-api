@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 const env = process.env;
+console.log(env, '====>>>')
 const config = {
     db: { /* do not put password or any sensitive info here, done only for demo */
       host: env.PG_HOST,
