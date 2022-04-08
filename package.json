@@ -4,9 +4,12 @@
   "description": "simple nodejs app",
   "main": "index.js",
   "scripts": {
-    "migrate": "node-pg-migrate",
-    "start": "node app.js",
+    "migrate": "node-pg-migrate up",
+    "start": "npm run migrate && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "author": "",
   "license": "ISC",
