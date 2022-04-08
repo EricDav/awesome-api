@@ -7,6 +7,10 @@ const config = {
       port: env.PG_PORT,
       user: env.PG_USER,
       password: env.PG_PASSWORD,
-      database: env.PG_NAME,
+      database: env.PG_DATABASE,
     },
 };
+
+module.exports =  {
+  config
+}

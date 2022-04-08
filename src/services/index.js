@@ -51,7 +51,7 @@ const getSinglePostData = async (data) => {
                 [data.postId, DEFAULT_LIMIT]
             ),
             db.query(
-                'SELECT * from comments WHERE "postId" = $1', 
+                'SELECT * from comments WHERE "postId" = $1 ORDER BY "createdAt" DESC', 
                 [data.postId]
             )
         ]);
